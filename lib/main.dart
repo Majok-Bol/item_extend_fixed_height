@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget{
         backgroundColor: Colors.grey[400],
         appBar: AppBar(title: Text('List extent',style: TextStyle(color: Colors.white,fontSize: 25),),backgroundColor: Colors.purple,centerTitle: true,),
         body: ListView.builder(
-          itemExtent: 300,
+          itemExtent: 350,
           itemCount: imagesPath.length,
             itemBuilder: (context,index){
             return ListTile(
