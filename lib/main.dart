@@ -21,9 +21,9 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey[400],
+        backgroundColor: Colors.blueGrey[400],
         appBar: AppBar(title: Text('List extent',style: TextStyle(color: Colors.white,fontSize: 25),),backgroundColor: Colors.purple,centerTitle: true,),
-        body: ListView.builder(
+        body:ListView.builder(
           itemExtent: 350,
           itemCount: imagesPath.length,
             itemBuilder: (context,index){
@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget{
 
         }),
       ),
+
     );
   }
 }
